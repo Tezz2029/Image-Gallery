@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.brand-banner {
+  height: 500px;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(img/bannerbgimg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.branding {
+  padding: 5rem;
+  background-color: rgba(155, 153, 153, 0.8);
+  border: 2px solid black;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.branding h1 {
+  font-size: 4rem;
+  animation: hu__hu__ infinite 2s ease-in-out;
+  margin-bottom: 2rem;
+}
+
+@keyframes hu__hu__ {
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+.image-gallery {
+  padding: 5rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.5rem;
+}
+
+img {
+  width: 30%;
+  transition: all 0.3s ease-in-out;
+}
+
+.guards {
+  height: 60vh;
+}
+
+.vessels1 {
+  height: 67vh;
+}
+
+.ornaments {
+  height: 60vh;
+}
+
+img:hover {
+  transform: scale(1.1);
+  -webkit-box-shadow: -1px 5px 14px 2px rgba(0, 0, 0, 0.42);
+  box-shadow: -1px 5px 14px 2px rgba(0, 0, 0, 0.42);
+}
+
+@media only screen and (max-width: 660px) {
+  .row {
+    flex-direction: column;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
