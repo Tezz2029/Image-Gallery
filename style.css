@@ -38,10 +38,12 @@
 }
 
 .image-gallery {
-  padding: 5rem;
+  padding: 10rem;
+  position: relative;
 }
 
 .row {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-bottom: 3.5rem;
@@ -50,9 +52,17 @@
 img {
   width: 30%;
   border: 20px solid rgb(226, 215, 215);
-  padding: 0.25rem;
-  margin: 0.5rem;
+  padding: 0.5rem;
+  margin: 0.8rem;
   transition: all 0.3s ease-in-out;
+}
+
+.bike {
+  height: 460px;
+}
+
+.vessels {
+  height: 490px;
 }
 
 .guards {
